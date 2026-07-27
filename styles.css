@@ -1,0 +1,210 @@
+/* ==========================================================
+   DESIGN TOKENS — Editorial Charcoal & Gold theme
+   ========================================================== */
+:root {
+  --bg: #FBFAF7;
+  --surface: #F3F0EA;
+  --surface-2: #FFFFFF;
+  --border: #E1DCD1;
+  --text: #26241F;
+  --text-dim: #746F64;
+  --accent: #9C7A2E;      /* muted gold */
+  --accent-soft: #EFE6D2; /* pale gold wash for backgrounds/tags */
+  --font-display: 'Source Serif 4', Georgia, serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --radius: 4px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 600; }
+
+.accent { color: var(--accent); }
+
+/* ---------------- NAV ---------------- */
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(251,250,247,0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px;
+}
+.nav-brand {
+  font-family: var(--font-display); font-size: 27px; font-weight: 600; letter-spacing: 0.02em;
+  
+}
+.nav-links { display: flex; gap: 32px; }
+.nav-links a {
+  font-size: 14px; color: var(--text-dim); transition: color 0.15s;
+}
+.nav-links a:hover, .nav-links a:focus-visible { color: var(--accent); }
+
+/* ---------------- HERO ---------------- */
+.hero {
+  padding: 110px 24px 90px;
+  max-width: 1080px; margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+}
+.hero-inner { max-width: 700px; }
+.eyebrow {
+  font-family: var(--font-mono); font-size: 15px;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  margin-bottom: 22px;
+}
+
+/*.hero-sub {
+  font-size: 1.08rem; color: var(--text-dim); max-width: 580px; margin-bottom: 34px;
+}*/
+
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn {
+  padding: 13px 26px; border-radius: var(--radius); font-weight: 600; font-size: 0.92rem;
+  transition: background 0.15s, border-color 0.15s;
+  display: inline-block; border: 1px solid transparent;
+}
+.btn-primary { background: var(--text); color: var(--bg); }
+.btn-primary:hover { background: var(--accent); }
+.btn-ghost { border-color: var(--border); color: var(--text); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ---------------- SECTIONS ---------------- */
+.section {
+  max-width: 1080px; margin: 0 auto;
+  padding: 90px 24px;
+}
+
+#about { padding-bottom: 40px; }
+#experience { padding-top: 40px; }
+#certification { padding-bottom: 40px; }
+#contact { padding-top: 40px; }
+
+.section-alt { background: var(--surface); }
+.section-head { max-width: 640px; margin-bottom: 40px; }
+.section-head h2 { font-size: clamp(1.5rem, 2.8vw, 2rem); margin-bottom: 12px; }
+.section-sub { color: var(--text-dim); }
+
+/* ---------------- ABOUT ---------------- */
+.about-text { max-width: 700px; color: var(--text-dim); font-size: 1.02rem; }
+.about-text p + p { margin-top: 16px; }
+
+
+/* ---------------- EXPERIENCE / PROJECTS ---------------- */
+.case-list { display: flex; flex-direction: column; gap: 20px;  }
+.case-card {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 34px;
+}
+.case-card-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  flex-wrap: wrap; gap: 10px; margin-bottom: 10px;
+}
+.case-card-head h3 { font-size: 1.25rem; }
+.case-tag {
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent);
+  background: var(--accent-soft); padding: 4px 11px; border-radius: 100px; letter-spacing: 0.03em;
+}
+.case-desc { color: var(--text-dim); margin-bottom: 24px; max-width: 660px; }
+.case-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px; margin-bottom: 22px;
+}
+.case-stat-num {
+  font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--text);
+  display: block;
+}
+.case-stat-label { font-size: 0.78rem; color: var(--text-dim); }
+.case-lessons { font-size: 0.92rem; color: var(--text-dim); border-top: 1px solid var(--border); padding-top: 18px; }
+.case-lessons strong { color: var(--text); }
+.case-image { width: 100%; border-radius: var(--radius); margin: 20px 0; display: block; }
+
+
+/* ---------------- SKILLS (equal treatment, no level tags) ---------------- */
+.skills-category { margin-bottom: 36px; }
+.skills-category:last-child { margin-bottom: 0; }
+.skills-category-title {
+  font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--accent); margin-bottom: 16px;
+}
+.skills-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.skill-card {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px;
+}
+.skill-name { font-weight: 600; margin-bottom: 6px; }
+.skill-note { font-size: 0.85rem; color: var(--text-dim); }
+
+/* ---------------- CERTIFICATION ---------------- */
+#certification-list { display: flex; flex-direction: column; gap: 20px; }
+.cert-card {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 34px;
+}
+.cert-card-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  flex-wrap: wrap; gap: 10px;
+}
+.cert-name { font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 6px; }
+.cert-meta { color: var(--text-dim); font-size: 0.9rem; }
+.cert-badge {
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent);
+  background: var(--accent-soft); padding: 5px 12px; border-radius: 100px;
+}
+.cert-image { width: 100%; border-radius: var(--radius); margin-top: 20px; display: block; }
+
+
+.published-empty { color: var(--text-dim); font-size: 0.9rem; }
+
+/* ---------------- CONTACT ---------------- */
+.contact-box {
+  border: 1px dashed var(--border); border-radius: var(--radius);
+  padding: 40px; text-align: center; background: var(--surface-2);
+}
+
+
+
+.contact-intro { color: var(--text-dim); font-size: 1rem; max-width: 520px; margin: 0 auto 28px; }
+.contact-links { display: flex; flex-direction: column; gap: 12px; max-width: 340px; margin: 0 auto; }
+.contact-link {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 18px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--bg); transition: border-color 0.15s, background 0.15s;
+}
+.contact-link:hover { border-color: var(--accent); background: var(--accent-soft); }
+.contact-label {
+  font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--accent);
+}
+.contact-value { font-size: 0.9rem; color: var(--text); }
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  text-align: center; padding: 40px 24px; color: var(--text-dim);
+  font-size: 0.85rem; border-top: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  .nav-links { gap: 16px; }
+  .hero { padding-top: 80px; }
+  .section { padding: 56px 20px; }
+}
