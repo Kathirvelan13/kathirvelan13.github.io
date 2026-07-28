@@ -87,32 +87,32 @@ const certifications = [
    -------------------------------------------------------------------- */
 const faqs = [
   {
-    question: "What services do you offer?",
-    answer: "Placeholder answer — replace with your own text."
+    question: "What does a digital marketer actually do?",
+    answer: "A digital marketer plans and runs campaigns across platforms like Meta, Google and LinkedIn to bring the right people to a business — then uses SEO strategies to keep that traffic growing organically over time."
   },
   {
-    question: "How much do you charge for a campaign?",
-    answer: "Placeholder answer — replace with your own text."
+    question: "Which platforms do you specialize in?",
+    answer: "I mainly work with Meta Ads and Google Ads for paid campaigns also have a strong foundation on LinkedIn Ads, then builds a hands-on experience in SEO — keyword research, on-page optimization, technical SEO and search visibilty knowledge."
   },
   {
     question: "How long does it take to see results from ads?",
     answer: "Placeholder answer — replace with your own text."
   },
   {
-    question: "Do you work with businesses outside India?",
-    answer: "Placeholder answer — replace with your own text."
+    question: "Do you have real campaign experience?",
+    answer: "I have managed live Meta ad campaigns for real businesses, handled everything from audience targeting to Ad optimization by reading the Metrics. I learn best by doing, not just studying."
   },
   {
-    question: "What platforms do you specialize in?",
-    answer: "Placeholder answer — replace with your own text."
+    question: "Are you open to full-time opportunities?",
+    answer: "Yes — I'm actively looking to join a team where I can apply my knowledge and grow with the organization."
   },
   {
-    question: "Do you offer SEO along with paid ads?",
-    answer: "Placeholder answer — replace with your own text."
+    question: "How do you decide between Google Ads and Meta Ads for a campaign?",
+    answer: "It depends up on the Products or Services. Google Ads works well when people are actively searching for something — that's high intent. Meta Ads is stronger for warm up, engagement, and visual storytelling when the audience isn't searching yet but they are our targeted audience."
   },
   {
-    question: "How do we get started working together?",
-    answer: "Placeholder answer — replace with your own text."
+    question: "What made you choose digital marketing as a career?",
+    answer: "I always loved creating content — writing scripts, acting in them, and seeing the audience enjoy it. Digital marketing let me use that same skill, but now to promote a product or service and get real results."
   },
 ];
 
