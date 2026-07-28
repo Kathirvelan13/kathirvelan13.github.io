@@ -88,15 +88,15 @@ const certifications = [
 const faqs = [
   {
     question: "What does a digital marketer actually do?",
-    answer: "A digital marketer plans and runs campaigns across platforms like Meta, Google and LinkedIn to bring the right people to a business — then uses SEO strategies to keep that traffic growing organically over time."
+    answer: "A digital marketer plans and runs campaigns across platforms like Meta, Google and LinkedIn to bring the right people to a business, then uses SEO strategies to keep that traffic growing organically over time."
   },
   {
     question: "Which platforms do you specialize in?",
     answer: "I mainly work with Meta Ads and Google Ads for paid campaigns also have a strong foundation on LinkedIn Ads, then builds a hands-on experience in SEO — keyword research, on-page optimization, technical SEO and search visibilty knowledge."
   },
   {
-    question: "How long does it take to see results from ads?",
-    answer: "Placeholder answer — replace with your own text."
+    question: "How do you measure if a campaign is actually working?",
+    answer: "By Measuring the Metrics of Cost per lead, click-through rate, and frequency are my core numbers, we can decide whether a campaign is working or not by seeing them almost."
   },
   {
     question: "Do you have real campaign experience?",
