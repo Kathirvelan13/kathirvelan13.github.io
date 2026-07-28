@@ -215,7 +215,6 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
   background: var(--bg); transition: border-color 0.15s, background 0.15s;
   gap: 12px;
 }
-
 .contact-link:hover { border-color: var(--accent); background: var(--accent-soft); }
 
 .contact-label {
@@ -289,4 +288,4 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
 
 @media (max-width: 380px) {
   .case-stats { grid-template-columns: 1fr 1fr; }
-} 
+}
