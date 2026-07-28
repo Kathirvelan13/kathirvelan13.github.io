@@ -196,6 +196,32 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
 
 .published-empty { color: var(--text-dim); font-size: 0.9rem; }
 
+/* ---------------- FAQ ---------------- */
+.faq-list { display: flex; flex-direction: column; gap: 14px; }
+.faq-item {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.faq-question {
+  width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; padding: 20px 24px; font-family: var(--font-body);
+  font-weight: 600; font-size: 1rem; color: var(--text);
+}
+.faq-question:hover { color: var(--accent); }
+.faq-icon {
+  font-family: var(--font-mono); font-size: 1.1rem; color: var(--accent);
+  flex-shrink: 0; transition: transform 0.2s ease;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-answer {
+  max-height: 0; overflow: hidden; transition: max-height 0.25s ease;
+}
+.faq-answer-inner {
+  padding: 0 24px 20px; color: var(--text-dim); font-size: 0.95rem; line-height: 1.6;
+}
+.faq-item.open .faq-answer { max-height: 400px; }
+
 /* ---------------- CONTACT ---------------- */
 .contact-box {
   border: 1px dashed var(--border); border-radius: var(--radius);
