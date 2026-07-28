@@ -82,6 +82,40 @@ const certifications = [
   /* Add another certification here — copy the block above this line. */
 ];
 
+/* --------------------------------------------------------------------
+   4. FAQ — question and answer pairs
+   -------------------------------------------------------------------- */
+const faqs = [
+  {
+    question: "What services do you offer?",
+    answer: "Placeholder answer — replace with your own text."
+  },
+  {
+    question: "How much do you charge for a campaign?",
+    answer: "Placeholder answer — replace with your own text."
+  },
+  {
+    question: "How long does it take to see results from ads?",
+    answer: "Placeholder answer — replace with your own text."
+  },
+  {
+    question: "Do you work with businesses outside India?",
+    answer: "Placeholder answer — replace with your own text."
+  },
+  {
+    question: "What platforms do you specialize in?",
+    answer: "Placeholder answer — replace with your own text."
+  },
+  {
+    question: "Do you offer SEO along with paid ads?",
+    answer: "Placeholder answer — replace with your own text."
+  },
+  {
+    question: "How do we get started working together?",
+    answer: "Placeholder answer — replace with your own text."
+  },
+];
+
 
 
 /* ==========================================================================
@@ -146,6 +180,28 @@ certList.innerHTML = certifications.length
     </div>
   `).join("")
   : `<p class="published-empty">Certifications will appear here.</p>`;
+
+// --- FAQ ---
+const faqList = document.getElementById("faq-list");
+faqList.innerHTML = `<div class="faq-list">
+  ${faqs.map((f, i) => `
+    <div class="faq-item" id="faq-${i}">
+      <button class="faq-question" data-index="${i}">
+        <span>${f.question}</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">${f.answer}</div>
+      </div>
+    </div>
+  `).join("")}
+</div>`;
+
+faqList.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.closest(".faq-item").classList.toggle("open");
+  });
+});
 
 // --------------------------------------------------------------------
 // MOBILE NAV — hamburger toggle for small screens
