@@ -147,4 +147,23 @@ certList.innerHTML = certifications.length
   `).join("")
   : `<p class="published-empty">Certifications will appear here.</p>`;
 
+// --------------------------------------------------------------------
+// MOBILE NAV — hamburger toggle for small screens
+// --------------------------------------------------------------------
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
 
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  // Close the menu whenever a link is tapped
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
