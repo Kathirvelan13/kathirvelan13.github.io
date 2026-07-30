@@ -54,7 +54,7 @@ const skillCategories = [
   {
     category: "SEO & Content",
     items: [
-      { name: "hiiiiii SEO", note: "Specialized in On-page and technical SEO for WordPress sites — page audits, metadata, site speed, and search visibility improvements." },
+      { name: "SEO", note: "Specialized in On-page and technical SEO for WordPress sites — page audits, metadata, site speed, and search visibility improvements." },
       { name: "Content Writing", note: "Writing scripts for short-form video content — crafting the first 2-3 seconds as a hook that stops the scroll, structuring the middle to hold attention, and closing with a clear call-to-action." },
       { name: "Copywriting", note: "Specialized in writing AD copy, what audience actually searches and feels using Word Cloud Techniques." },
     ]
