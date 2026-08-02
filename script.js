@@ -228,8 +228,8 @@ ${c.image ? `<img class="cert-image" src="${c.image}" alt="${c.imageAlt || c.nam
 // --- Blog ---
 const blogList = document.getElementById("blog-list");
 blogList.innerHTML = blogPosts.length
-  ? `<div class="blog-grid">${blogPosts.map((b, i) => `
-    <article class="blog-card" id="blog-${i}">
+? `<div class="blog-list">${blogPosts.map((b, i) => `
+<article class="blog-card" id="blog-${i}">
       ${b.cover ? `<img class="blog-cover" src="${b.cover}" alt="${b.coverAlt || b.title}">` : ""}
       <div class="blog-card-body">
         <span class="blog-tag">${b.tag}</span>
