@@ -193,6 +193,43 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
 }
 .cert-image { width: 100%; border-radius: var(--radius); margin-top: 20px; display: block; }
 
+/* ---------------- BLOG ---------------- */
+.blog-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.blog-card {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.blog-cover { width: 100%; height: 190px; object-fit: cover; display: block; }
+.blog-card-body { padding: 28px; }
+.blog-tag {
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent);
+  background: var(--accent-soft); padding: 4px 11px; border-radius: 100px;
+  letter-spacing: 0.03em; display: inline-block; margin-bottom: 14px;
+}
+.blog-title { font-size: 1.15rem; margin-bottom: 10px; }
+.blog-hook { color: var(--text-dim); font-size: 0.95rem; margin-bottom: 20px; }
+.blog-toggle {
+  display: flex; align-items: center; gap: 8px;
+  background: none; border: none; cursor: pointer; padding: 0;
+  font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.blog-toggle-icon { font-size: 1rem; transition: transform 0.2s ease; }
+.blog-card.open .blog-toggle-icon { transform: rotate(45deg); }
+.blog-full {
+  max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+}
+.blog-card.open .blog-full { max-height: 2000px; }
+.blog-full-inner { padding-top: 22px; }
+.blog-full-inner h4 {
+  font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+  color: var(--text); margin-top: 20px; margin-bottom: 8px;
+}
+.blog-full-inner h4:first-child { margin-top: 0; }
+.blog-full-inner p { color: var(--text-dim); font-size: 0.92rem; }
 
 .published-empty { color: var(--text-dim); font-size: 0.9rem; }
 
@@ -268,6 +305,7 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
 @media (max-width: 720px) {
   .nav-inner { padding: 16px 20px; }
   .nav-brand { font-size: 21px; }
+  .blog-card-body { padding: 20px; }
 
   /* Show the hamburger, hide it visually only for larger screens */
   .nav-toggle { display: flex; }
