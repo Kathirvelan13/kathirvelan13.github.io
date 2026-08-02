@@ -116,7 +116,6 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
 #experience { padding-top: 40px; }
 #certification { padding-bottom: 40px; }
 #blog { padding-top: 40px; padding-bottom: 40px; }
-#faq { padding-top: 45px; }
 #contact { padding-top: 40px; }
 
 .section-alt { background: var(--surface); }
