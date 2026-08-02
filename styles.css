@@ -194,15 +194,16 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
 .cert-image { width: 100%; border-radius: var(--radius); margin-top: 20px; display: block; }
 
 /* ---------------- BLOG ---------------- */
-.blog-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+/* ---------------- BLOG ---------------- */
+.blog-list {
+  display: flex; flex-direction: column;
+  gap: 20px;
 }
 .blog-card {
   background: var(--surface-2); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden;
 }
-.blog-cover { width: 100%; height: 190px; object-fit: cover; display: block; }
+.blog-cover { width: 100%; height: auto; max-height: 340px; object-fit: contain; background: var(--surface); display: block; }
 .blog-card-body { padding: 28px; }
 .blog-tag {
   font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent);
