@@ -102,8 +102,8 @@ const blogPosts = [
     ],
     conclusionHeading: "Still Need Personal Assistance?",
     conclusionText: "If your pages still aren't indexed after trying this, don't worry — it happens to a lot of websites. Reach out to me by email, and I'll personally check your sitemap and indexing issues, then tell you exactly what's wrong and how to fix it.",
-    image: "already seo.png",
-    imageAlt: "SEO"
+    cover: "already seo.png",
+    coverAlt: "SEO"
   },
   {
     title: "Are You Getting Clicks on Meta Ads, but No Sales?",
@@ -119,8 +119,8 @@ const blogPosts = [
     ],
     conclusionHeading: "Thinking Personal Assistance Would Help?",
     conclusionText: "Feel free to reach out to me on WhatsApp. I'll help you turn your clicks into real sales.",
-    image: "Meta Ads - clicks no sales.png",
-    imageAlt: "Meta ads"
+    cover: "Meta Ads - clicks no sales.png",
+    coverAlt: "Meta ads"
   },
 
   /* Add your next blog post here — copy a block above this line. */
