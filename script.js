@@ -101,7 +101,9 @@ const blogPosts = [
       { heading: "How to Check If Every Page Is Indexed on Google", text: "To know if every page is indexed, go to Google Search Console and open the URL Inspection tool. Paste the page's URL and hit enter. Google will tell you if that page is indexed or not. Do this for every important page on your site — homepage, service pages, and blog posts." }
     ],
     conclusionHeading: "Still Need Personal Assistance?",
-    conclusionText: "If your pages still aren't indexed after trying this, don't worry — it happens to a lot of websites. Reach out to me by email, and I'll personally check your sitemap and indexing issues, then tell you exactly what's wrong and how to fix it."
+    conclusionText: "If your pages still aren't indexed after trying this, don't worry — it happens to a lot of websites. Reach out to me by email, and I'll personally check your sitemap and indexing issues, then tell you exactly what's wrong and how to fix it.",
+    image: "already seo.png",
+    imageAlt: "SEO"
   },
   {
     title: "Are You Getting Clicks on Meta Ads, but No Sales?",
@@ -116,7 +118,9 @@ const blogPosts = [
       { heading: "What to Fix", text: "If your Facebook Ads are getting clicks but not sales, don't stop running ads. Instead, ask yourself these three questions:\n1. Am I targeting the right audience?\n2. Is my offer clear?\n3. What happens after someone clicks?" }
     ],
     conclusionHeading: "Thinking Personal Assistance Would Help?",
-    conclusionText: "Feel free to reach out to me on WhatsApp. I'll help you turn your clicks into real sales."
+    conclusionText: "Feel free to reach out to me on WhatsApp. I'll help you turn your clicks into real sales.",
+    image: "Meta Ads - clicks no sales.png",
+    imageAlt: "Meta ads"
   },
 
   /* Add your next blog post here — copy a block above this line. */
