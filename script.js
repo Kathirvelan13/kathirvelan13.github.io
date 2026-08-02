@@ -85,6 +85,44 @@ const certifications = [
 ];
 
 /* --------------------------------------------------------------------
+   3.5. BLOG POSTS — one block per article
+   -------------------------------------------------------------------- */
+const blogPosts = [
+  {
+    title: "Already Did SEO but Still Not Ranked on Google? Here's Why",
+    tag: "SEO",
+    hook: "You can read your website easily. But can Google? If Google can't properly read your site, it won't rank it. Let's find out why.",
+    cover: "blog-seo-not-ranked.png",
+    coverAlt: "SEO not ranking on Google",
+    sections: [
+      { heading: "Sometimes You Need Some Patience", text: "You did proper SEO from top to end for your website, but your site may be new, or you did SEO just a day before. Google actually needs some time to read your site and decide whether to rank it or not. Better to give it some time before drawing conclusions." },
+      { heading: "Is Your Content Solving a Problem?", text: "Sometimes proper SEO without problem-solving content doesn't work. Google won't rank your site if people are searching for something and your site isn't solving it. Writing content from a problem-solving angle is what you need to check and fix." },
+      { heading: "Submitting a Sitemap Doesn't Mean Instant Ranking", text: "Just because you submitted your sitemap to Google Search Console doesn't mean Google will rank your website. Submitting a sitemap only tells Google \u201chere are my URLs, please check them.\u201d Google still needs time to crawl your site and check if each URL is set up properly. This can take days or even weeks, not minutes." },
+      { heading: "How to Check If Every Page Is Indexed on Google", text: "To know if every page is indexed, go to Google Search Console and open the URL Inspection tool. Paste the page's URL and hit enter. Google will tell you if that page is indexed or not. Do this for every important page on your site — homepage, service pages, and blog posts." }
+    ],
+    conclusionHeading: "Still Need Personal Assistance?",
+    conclusionText: "If your pages still aren't indexed after trying this, don't worry — it happens to a lot of websites. Reach out to me by email, and I'll personally check your sitemap and indexing issues, then tell you exactly what's wrong and how to fix it."
+  },
+  {
+    title: "Are You Getting Clicks on Meta Ads, but No Sales?",
+    tag: "Meta Ads",
+    hook: "Same thing happened to my client. It may be a small thing in the strategy you missed.",
+    cover: "blog-meta-ads-no-sales.png",
+    coverAlt: "Meta Ads getting clicks but no sales",
+    sections: [
+      { heading: "An Offer Can Convert Your Clicks Into Sales", text: "One right offer can entirely change your clicks into a huge amount of sales. Make sure the offer gives profit to both your business and your customers." },
+      { heading: "Are You Targeting the Right People?", text: "Targeting too broad for a new ad account may get you unrelated leads or sales. Target only the audience you actually want instead of going broad.\n\nFor example, if you're running Meta Ads for an aerial yoga workshop, targeting everyone interested in \u201cFitness\u201d is too broad.\n\nInstead, target the people who are actually looking to join:\n\u2022 Women aged 25\u201340\n\u2022 Interested in Yoga & Wellness\n\u2022 Living near your studio\n\u2022 Already searching for healthy lifestyle activities\n\nThe more relevant your audience, the better your chances of getting real enquiries instead of random clicks." },
+      { heading: "The Problem May Be After the Click", text: "Imagine clicking an ad you're interested in, but you land on a slow website or a landing page with a lot of unnecessary information. Sometimes the ad doesn't fail — the landing page does. Build your landing page content around solving the customer's problem." },
+      { heading: "What to Fix", text: "If your Facebook Ads are getting clicks but not sales, don't stop running ads. Instead, ask yourself these three questions:\n1. Am I targeting the right audience?\n2. Is my offer clear?\n3. What happens after someone clicks?" }
+    ],
+    conclusionHeading: "Thinking Personal Assistance Would Help?",
+    conclusionText: "Feel free to reach out to me on WhatsApp. I'll help you turn your clicks into real sales."
+  },
+
+  /* Add your next blog post here — copy a block above this line. */
+];
+
+/* --------------------------------------------------------------------
    4. FAQ — question and answer pairs
    -------------------------------------------------------------------- */
 const faqs = [
@@ -182,6 +220,44 @@ ${c.image ? `<img class="cert-image" src="${c.image}" alt="${c.imageAlt || c.nam
    </div>
   `).join("")
   : `<p class="published-empty">Certifications will appear here.</p>`;
+
+// --- Blog ---
+const blogList = document.getElementById("blog-list");
+blogList.innerHTML = blogPosts.length
+  ? `<div class="blog-grid">${blogPosts.map((b, i) => `
+    <article class="blog-card" id="blog-${i}">
+      ${b.cover ? `<img class="blog-cover" src="${b.cover}" alt="${b.coverAlt || b.title}">` : ""}
+      <div class="blog-card-body">
+        <span class="blog-tag">${b.tag}</span>
+        <h3 class="blog-title">${b.title}</h3>
+        <p class="blog-hook">${b.hook}</p>
+        <button class="blog-toggle" data-index="${i}">
+          <span class="blog-toggle-text">Read full post</span>
+          <span class="blog-toggle-icon">+</span>
+        </button>
+        <div class="blog-full">
+          <div class="blog-full-inner">
+            ${b.sections.map(s => `
+              <h4>${s.heading}</h4>
+              <p>${s.text.replace(/\n/g, "<br>")}</p>
+            `).join("")}
+            <h4>${b.conclusionHeading}</h4>
+            <p>${b.conclusionText}</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  `).join("")}</div>`
+  : `<p class="published-empty">Posts will appear here.</p>`;
+
+blogList.querySelectorAll(".blog-toggle").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".blog-card");
+    const opening = !card.classList.contains("open");
+    card.classList.toggle("open");
+    btn.querySelector(".blog-toggle-text").textContent = opening ? "Show less" : "Read full post";
+  });
+});
 
 // --- FAQ ---
 const faqList = document.getElementById("faq-list");
