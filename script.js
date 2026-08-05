@@ -47,15 +47,15 @@ const skillCategories = [
     category: "Paid Media",
     items: [
       { name: "Meta Ads (Facebook & Instagram)", note: "From picking the right campaign objective to tracking website engagement using Pixel and aslo specialized in optimizing the ad, by reading the metrics." },
-      { name: "Google Ads", note: "Keyword Research, Right campaign type — Search, Performance Max, or Shopping, Tracking conversions with Google Tag Manager." },
+      { name: "Google Ads", note: "Keyword Research, Right campaign type - Search, Performance Max, or Shopping, Tracking conversions with Google Tag Manager." },
       { name: "LinkedIn Ads", note: "Built the solid fundamentals of campaign objectives, audience targeting by job title and industry, and Lead Gen Forms." },
     ]
   },
   {
     category: "SEO & Content",
     items: [
-      { name: "SEO", note: "Specialized in On-page and technical SEO for WordPress sites — page audits, metadata, site speed, and search visibility improvements." },
-      { name: "Content Writing", note: "Writing scripts for short-form video content — crafting the first 2-3 seconds as a hook that stops the scroll, structuring the middle to hold attention, and closing with a clear call-to-action." },
+      { name: "SEO", note: "Specialized in On-page SEO, technical SEO and Off-page SEO for Wordpress as well as coding based sites - page audits, metadata, site speed, and search visibility improvements." },
+      { name: "Content Writing", note: "Writing scripts for short-form video content - crafting the first 2-3 seconds as a hook that stops the scroll, structuring the middle to hold attention, and closing with a clear call-to-action." },
       { name: "Copywriting", note: "Specialized in writing AD copy, what audience actually searches and feels using Word Cloud Techniques." },
     ]
   },
