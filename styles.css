@@ -355,8 +355,7 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
   /* SEO */
 
 .experience-subhead { margin-top: 50px; margin-bottom: 24px; }
-.experience-subhead h3 { font-size: 1.3rem; }
-
+.experience-subhead h3 { font-size: clamp(1.5rem, 2.8vw, 2rem); }
 .seo-card .case-desc { margin-bottom: 20px; }
 .seo-point { margin-top: 18px; }
 .seo-point h4 {
