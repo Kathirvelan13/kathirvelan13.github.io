@@ -38,6 +38,32 @@ const caseStudies = [
   /* Add your next project here — copy the block above this line. */
 ];
 
+/* --------------------------------------------------------------------
+   1.5. SEO EXPERIENCE — gained from building this portfolio itself
+   -------------------------------------------------------------------- */
+const seoExperience = {
+  intro:
+    "I built this entire portfolio as an SEO project, not just a showcase. Every part of it — from planning to publishing — was done using proper SEO practices, so this became real hands-on experience instead of just theory.",
+  points: [
+    {
+      heading: "Competitor Research",
+      text: "Before starting, I checked how other freelance digital marketers had built their own websites — their domain authority, page authority, backlinks, and whether they had blogs. This helped me understand what a strong marketer's site should look like, so I could build mine better."
+    },
+    {
+      heading: "Keyword Research & On-Page SEO",
+      text: "I researched medium and low competition keywords that fit my content, then used them to write my meta titles, meta descriptions, and the page content itself — without stuffing keywords unnaturally. I also added proper alt text for every image on the site."
+    },
+    {
+      heading: "Technical SEO",
+      text: "I integrated Google Analytics and Google Search Console to check whether my pages were getting indexed. I set up an XML sitemap and an image sitemap, added a robots.txt file to stop unnecessary pages from being crawled, added FAQ schema so Google can show my FAQs directly in search results, and added a canonical tag to avoid duplicate content issues."
+    },
+    {
+      heading: "Off-Page SEO",
+      text: "I submitted my portfolio link by answering relevant questions on Quora and Reddit, which helped bring in organic traffic from real conversations instead of paid promotion."
+    }
+  ]
+};
+
 
 /* --------------------------------------------------------------------
    2. SKILLS — grouped by category, shown at equal level
@@ -191,6 +217,20 @@ ${c.image ? `<img class="case-image" src="${c.image}" alt="${c.imageAlt || c.tit
 </article>
   `).join("")
   : `<p class="published-empty">Projects will appear here.</p>`;
+
+// --- SEO Experience ---
+const seoList = document.getElementById("seo-experience-list");
+seoList.innerHTML = `
+  <div class="case-card seo-card">
+    <p class="case-desc">${seoExperience.intro}</p>
+    ${seoExperience.points.map(p => `
+      <div class="seo-point">
+        <h4>${p.heading}</h4>
+        <p>${p.text}</p>
+      </div>
+    `).join("")}
+  </div>
+`;
 
 // --- Skills (grouped, equal treatment) ---
 const skillsContainer = document.getElementById("skills-container");
