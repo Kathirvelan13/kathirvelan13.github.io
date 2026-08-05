@@ -43,7 +43,7 @@ const caseStudies = [
    -------------------------------------------------------------------- */
 const seoExperience = {
   intro:
-    "I had built this entire portfolio to get real hands-on experience instead of just theory. Every part of this portfolio is built from planning to publishing on proper SEO standards.",
+    "I had built this entire portfolio you are currently looking to get real hands-on experience instead of just theory. Every part of this portfolio is built from planning to publishing on proper SEO standards.",
   points: [
     {
       heading: "Competitor Research",
