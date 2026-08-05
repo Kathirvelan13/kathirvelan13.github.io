@@ -43,23 +43,23 @@ const caseStudies = [
    -------------------------------------------------------------------- */
 const seoExperience = {
   intro:
-    "I built this entire portfolio as an SEO project, not just a showcase. Every part of it — from planning to publishing — was done using proper SEO practices, so this became real hands-on experience instead of just theory.",
+    "I had built this entire portfolio to get real hands-on experience instead of just theory. Every part of this portfolio is built from planning to publishing on proper SEO standards.",
   points: [
     {
       heading: "Competitor Research",
-      text: "Before starting, I checked how other freelance digital marketers had built their own websites — their domain authority, page authority, backlinks, and whether they had blogs. This helped me understand what a strong marketer's site should look like, so I could build mine better."
+      text: "Before starting, I checked how other freelance digital marketers had built their own websites like their domain authority, page authority, backlinks and whether they had any blogs. This helped me understand what a strong marketer's site should look like, so I could build mine better."
     },
     {
       heading: "Keyword Research & On-Page SEO",
-      text: "I researched medium and low competition keywords that fit my content, then used them to write my meta titles, meta descriptions, and the page content itself — without stuffing keywords unnaturally. I also added proper alt text for every image on the site."
+      text: "I had find out the most relevant keywords with medium and low competition which fits for my content, then used them to write my meta titles, meta descriptions and the page content itself - without stuffing keywords unnaturally. I also added proper alt text for every image on this portfolio site."
     },
     {
       heading: "Technical SEO",
-      text: "I integrated Google Analytics and Google Search Console to check whether my pages were getting indexed. I set up an XML sitemap and an image sitemap, added a robots.txt file to stop unnecessary pages from being crawled, added FAQ schema so Google can show my FAQs directly in search results, and added a canonical tag to avoid duplicate content issues."
+      text: "Done integration of Google Analytics and Google Search Console to check whether my pages were getting indexed or not. I set up an XML sitemap and an image sitemap, added a robots.txt file to stop unnecessary pages from being crawled, added FAQ schema so Google can show my FAQs directly in search results, and added a canonical tag to avoid duplicate content issues."
     },
     {
       heading: "Off-Page SEO",
-      text: "I submitted my portfolio link by answering relevant questions on Quora and Reddit, which helped bring in organic traffic from real conversations instead of paid promotion."
+      text: "Finally, I submitted my portfolio link by answering relevant questions on Quora and Reddit, which helps to bring organic traffic from real conversations."
     }
   ]
 };
