@@ -351,3 +351,16 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; font-weight: 6
 @media (max-width: 380px) {
   .case-stats { grid-template-columns: 1fr 1fr; }
 }
+
+  /* SEO */
+
+.experience-subhead { margin-top: 50px; margin-bottom: 24px; }
+.experience-subhead h3 { font-size: 1.3rem; }
+
+.seo-card .case-desc { margin-bottom: 20px; }
+.seo-point { margin-top: 18px; }
+.seo-point h4 {
+  font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+  color: var(--text); margin-bottom: 6px;
+}
+.seo-point p { color: var(--text-dim); font-size: 0.92rem; }
